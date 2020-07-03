@@ -7,5 +7,5 @@ RUN apk --update upgrade && \
     rm -rf /var/cache/apk/*
 
 ADD ./build/go-metadataproxy-linux-amd64 /go-metadataproxy
-EXPOSE 3000
+EXPOSE 8000
 CMD ["/go-metadataproxy"]
